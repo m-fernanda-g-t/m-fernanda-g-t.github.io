@@ -1,0 +1,159 @@
+body {
+      background-color: #040c1a !important;
+      font-family: 'Source Code Pro' !important;
+      margin: 0;
+      padding: 0;
+       background-image: url('../img/background.png'); /* Ajusta la ruta si es necesario */
+      background-size:contain;
+      background-position: top center;
+      
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      
+
+      background-attachment: scroll;
+      
+      background-size: 100% auto;
+      
+    }
+   
+ .text-orange {
+        color: 	#64ffda!important;
+    }
+    
+  
+  .hero-section, .sobre-mi-section {
+  min-height: 100vh; 
+  
+
+  
+}
+
+.sobre-mi-content p {
+  text-align: justify;
+}
+.icono-grande {
+  font-size: 3rem;
+  color: #64ffda; /* naranja, puedes cambiarlo */
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100vh;
+  background-color: #040b17!important;
+  color: #64ffda;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.logo{
+  width: auto;
+  max-height: 35px;
+  margin-left: -5px;
+ 
+}
+/* Centrar íconos y separarlos */
+.sidebar .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 1.5rem; /* Tamaño del ícono */
+}
+
+.sidebar .nav-link i {
+  color: #64ffda; /* o el color naranja que estés usando */
+  transition: transform 0.3s;
+}
+
+.sidebar .nav-link:hover i {
+  transform: scale(1.2); /* Efecto hover opcional */
+}
+/* Contenido desplazado a la derecha */
+.content {
+  margin-left: 200px;
+  padding: 0px;
+
+}
+
+  
+@media (max-width: 767.98px){
+.hero-content {
+  margin-top: 50%;
+  margin-bottom: 10%;
+}
+}
+
+
+@media (min-width: 1920px) {
+  .sobre-mi-content {
+    margin-top: 30%; /* o el valor que necesites */
+  }
+}
+
+.hero-section {
+  min-height: 100vh; /* por defecto: pantalla completa */
+}
+
+@media (max-width: 767.98px) {
+  .hero-section {
+    min-height: 50vh; /* solo en móviles: 60% de la altura */
+  }
+}
+.container{
+    margin-top:0px;
+}
+/* En pantallas pequeñas, navbar colapsable horizontal arriba */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .sidebar .nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sidebar .nav-link {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  /* El botón toggler visible solo en móvil */
+  .sidebar > div.d-flex {
+    display: flex !important;
+  }
+
+  /* El título grande oculto en móvil */
+  .sidebar h4.text-center {
+    display: none;
+  }
+}
+.sidebar {
+  height: 100vh; /* Altura completa */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    height: auto;
+    padding: 0.5rem 1rem !important;
+  }
+}
+.card {
+  background-color: #040c1a;
+}
+.img-fixed {
+  height: 400px;         /* Puedes ajustar el número */
+  object-fit: contain;  
+  max-width: 100%;   /* Asegura que no se deforme */
+}
+/* En celular: menos espacio arriba y abajo */
